@@ -5,6 +5,7 @@ interface IPaginateParams {
   currentPage: number;
   isFromStart?: boolean;
   isLengthAware?: boolean;
+  transaction?: Function
 }
 
 interface IWithPagination<Data, TParams = IPaginateParams> {
